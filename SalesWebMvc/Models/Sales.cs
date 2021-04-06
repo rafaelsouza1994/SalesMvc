@@ -13,7 +13,7 @@ namespace SalesWebMvc.Models
         public double ValueSale { get; set; }
         DateTime DateTimeSale { get; set; }
         public int Quantity { get; set; }
-        public ICollection<SalesRe> Sellers { get; set; } = new List<Seller>();
+        /*public ICollection<SalesRecord> Sellers { get; set; } = new List<Seller>();*/
 
         public Sales()
         {
@@ -31,7 +31,7 @@ namespace SalesWebMvc.Models
 
 
 
-        public void AddSales(SalesRecord sr)
+     /*   public void AddSales(SalesRecord sr)
         {
             Products.Add(sr);
         }
@@ -39,7 +39,7 @@ namespace SalesWebMvc.Models
         public void RemoveSales(SalesRecord sr)
         {
             Sales.Remove(sr);
-        }
+        }*/
 
     }
 }
