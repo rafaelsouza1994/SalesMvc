@@ -15,12 +15,12 @@ namespace SalesWebMvc.Services
             _context = context;
         }
 
-        public List<Products> FindAll()
+        public List<Product> FindAll()
         {
             return _context.Products.ToList();
         }
 
-        public void Insert(Products obj)
+        public void Insert(Product obj)
         {
             _context.Add(obj);
             _context.SaveChanges();
