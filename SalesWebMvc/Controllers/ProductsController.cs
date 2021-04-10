@@ -38,7 +38,7 @@ namespace SalesWebMvc.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-       /* public IActionResult Delete(int? id)
+        public IActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -76,6 +76,6 @@ namespace SalesWebMvc.Controllers
             }
 
             return View(obj);
-        }*/
+        }
     }
 }
