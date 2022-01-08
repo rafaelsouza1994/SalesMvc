@@ -6,14 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvc.Models;
-using SalesWebMvc.Services;
 
 namespace SalesWebMvc.Controllers
 {
     public class DepartmentsController : Controller
     {
         private readonly SalesWebMvcContext _context;
-        private readonly DepartmentService _departmentService;
 
         public DepartmentsController(SalesWebMvcContext context)
         {
